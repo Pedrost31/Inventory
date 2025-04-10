@@ -3,6 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Utilisateur\\app\\InventoryApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\testproject4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|c:\\users\\utilisateur\\app\\inventoryapp\\cardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|solutionrelative:cardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,21 +36,12 @@
       "RelativeMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|c:\\users\\utilisateur\\app\\inventoryapp\\repositories\\productsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|solutionrelative:repositories\\productsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|c:\\users\\utilisateur\\app\\inventoryapp\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D21090C6-0F3E-A69A-5341-25A916D2E71F}|InventoryApp.csproj|solutionrelative:repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\testproject4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA782615-E766-4C64-9F7E-585D173EE34A}|..\\TestProject4\\TestProject4.csproj|c:\\users\\utilisateur\\app\\testproject4\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -86,36 +86,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form5.cs",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form5.cs",
-              "RelativeDocumentMoniker": "Form5.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form5.cs",
-              "RelativeToolTip": "Form5.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAIwFoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T20:42:13.618Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CardControl.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs",
-              "RelativeDocumentMoniker": "CardControl.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs [Conception]",
-              "RelativeToolTip": "CardControl.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T23:19:26.838Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form4.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form4.cs",
               "RelativeDocumentMoniker": "Form4.cs",
@@ -127,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ProductsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Repositories\\ProductsRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ProductsRepository.cs",
@@ -140,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form4.cs",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form4.cs",
               "RelativeDocumentMoniker": "Form4.cs",
@@ -153,7 +132,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "TestProject4.csproj",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\TestProject4.csproj",
+              "RelativeDocumentMoniker": "..\\TestProject4\\TestProject4.csproj",
+              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\TestProject4.csproj",
+              "RelativeToolTip": "..\\TestProject4\\TestProject4.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-09T22:40:02.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\TestProject4\\Test1.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test1.cs*",
+              "RelativeToolTip": "..\\TestProject4\\Test1.cs*",
+              "ViewState": "AgIAACMAAAAAMDMzMzPzvxEAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T22:12:09.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Test2.cs",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test2.cs",
+              "RelativeDocumentMoniker": "..\\TestProject4\\Test2.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test2.cs",
+              "RelativeToolTip": "..\\TestProject4\\Test2.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T22:15:37.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CardControl.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs",
+              "RelativeDocumentMoniker": "CardControl.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs [Conception]",
+              "RelativeToolTip": "CardControl.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T23:19:26.838Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form5.cs",
+              "RelativeDocumentMoniker": "Form5.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form5.cs",
+              "RelativeToolTip": "Form5.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAIwFoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T20:42:13.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form5.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Form5.cs",
               "RelativeDocumentMoniker": "Form5.cs",
@@ -165,24 +208,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CardControl.cs",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs",
               "RelativeDocumentMoniker": "CardControl.cs",
               "ToolTip": "C:\\Users\\Utilisateur\\app\\InventoryApp\\CardControl.cs",
               "RelativeToolTip": "CardControl.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAzwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAkwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T23:19:53.688Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\InventoryApp\\Repositories\\UsersRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UsersRepository.cs",
@@ -191,32 +230,6 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T22:16:23.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Test1.cs",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test1.cs",
-              "RelativeDocumentMoniker": "..\\TestProject4\\Test1.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test1.cs",
-              "RelativeToolTip": "..\\TestProject4\\Test1.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAAwI0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T22:12:09.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Test2.cs",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test2.cs",
-              "RelativeDocumentMoniker": "..\\TestProject4\\Test2.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\Test2.cs",
-              "RelativeToolTip": "..\\TestProject4\\Test2.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T22:15:37.056Z",
               "EditorCaption": ""
             },
             {
@@ -241,19 +254,6 @@
               "RelativeToolTip": "Form1.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T21:13:08.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TestProject4.csproj",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\app\\TestProject4\\TestProject4.csproj",
-              "RelativeDocumentMoniker": "..\\TestProject4\\TestProject4.csproj",
-              "ToolTip": "C:\\Users\\Utilisateur\\app\\TestProject4\\TestProject4.csproj",
-              "RelativeToolTip": "..\\TestProject4\\TestProject4.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-09T22:40:02.868Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
