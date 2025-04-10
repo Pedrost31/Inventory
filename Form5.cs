@@ -32,24 +32,24 @@ namespace InventoryApp
         }
         private void Form5_Load(object sender, EventArgs e)
         {
-          
 
-                if (CardControl.view == true)
-                {
-                    // Ajouter un message de débogage avant d'appeler getDetail
-                    System.Diagnostics.Debug.WriteLine("Appel de getDetail");
-                    getDetail();
-                    Save.Text = "Modifier";
+
+            if (CardControl.view == true)
+            {
+                // Ajouter un message de débogage avant d'appeler getDetail
+                System.Diagnostics.Debug.WriteLine("Appel de getDetail");
+                getDetail();
+                Save.Text = "Modifier";
                 update = true;
-                }
-                else
-                {
-                    Save.Text = "Enregistrer";
-                update=false;
             }
+            else
+            {
+                Save.Text = "Enregistrer";
+                update = false;
             }
-          
-    
+        }
+
+
 
 
         private void cloudinaryStorage()
@@ -96,7 +96,7 @@ namespace InventoryApp
         public static bool isUpdate = false;
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            if(update == false)
+            if (update == false)
             {
                 ProductsRepository repo = new ProductsRepository();
                 Products product = new Products();
@@ -136,8 +136,8 @@ namespace InventoryApp
                 isUpdate = true;
                 MessageBox.Show("Produit mis à jour avec succès !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-           
-           
+
+
 
 
         }

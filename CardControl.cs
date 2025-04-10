@@ -50,6 +50,34 @@ namespace InventoryApp
             PictureBox2.ImageLocation = lastProduct?.image_link; // Si lastProduct est null, laisser l'ImageLocation vide
             lbid.Text = lastProduct?.id.ToString(); // Si lastProduct est null, laisser vide    
         }
+        public void searchResult(string key)
+        {
+            ProductsRepository repo = new ProductsRepository();
+
+            // Recherche du produit basé sur la clé fournie
+            Products product = repo.SearchProducts(key).FirstOrDefault()
+                               ?? new Products
+                               {
+                                   nom = "Aucun produit trouvé",
+                                   description = "",
+                                   stock = 0,
+                                   prix = 0,
+                                   categorie = "",
+                                   fournisseur = "",
+                                   image_link = "",
+                                   id = 0
+                               };
+
+            // Mise à jour des informations sur le contrôle CardControl
+            lbtitle.Text = product.nom;
+            lbdescription.Text = product.description;
+            lbstock.Text = product.stock.ToString();
+            lbprice.Text = product.prix.ToString("C2");
+            lbcategory.Text = product.categorie;
+            lbsupply.Text = product.fournisseur;
+            PictureBox2.ImageLocation = product.image_link;
+            lbid.Text = product.id.ToString();
+        }
 
         private void CardControl_Load(object sender, EventArgs e)
         {

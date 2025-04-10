@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventoryApp.Models
 {
-    class Users
+   public class Users
     {
         public int id;
         public string name = "";

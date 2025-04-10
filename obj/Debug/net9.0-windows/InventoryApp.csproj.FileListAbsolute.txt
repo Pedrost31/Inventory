@@ -64,8 +64,6 @@ C:\Users\Utilisateur\app\InventoryApp\bin\Debug\net9.0-windows\runtimes\win\lib\
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.csproj.AssemblyReference.cache
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.AddProduct.resources
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.CardControl.resources
-C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.InventoryApp.resources
-C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.Form3.resources
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.Form4.resources
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.Form5.resources
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.Properties.Resources.resources
@@ -82,3 +80,4 @@ C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\refint\InventoryA
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.pdb
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.genruntimeconfig.cache
 C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\ref\InventoryApp.dll
+C:\Users\Utilisateur\app\InventoryApp\obj\Debug\net9.0-windows\InventoryApp.InventoryApp.resources

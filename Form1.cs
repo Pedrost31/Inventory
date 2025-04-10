@@ -2,14 +2,19 @@ using System.Security.Cryptography;
 using System.Text;
 using InventoryApp.Repositories;
 using InventoryApp.Models;
-
+using MaterialSkin;
+using MaterialSkin.Controls;
 namespace InventoryApp
 {
     public partial class InventoryApp : Form
     {
+        MaterialSkinManager materialSkinManager;
         public InventoryApp()
         {
             InitializeComponent();
+
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey900, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Cyan700, TextShade.WHITE);
         }
 
         private void InventoryApp_Load(object sender, EventArgs e)
@@ -75,10 +80,10 @@ namespace InventoryApp
                 UserSession.UserEmail = user.email;
                 UserSession.UserRole = user.role;
 
-                Form3 form3 = new Form3();
+                Form4 form4 = new Form4();
                 this.Hide();
-                form3.FormClosed += (s, args) => this.Close();
-                form3.Show();
+                form4.FormClosed += (s, args) => this.Close();
+                form4.Show();
             }
             else
             {

@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        
+
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
@@ -262,8 +262,8 @@
             Controls.Add(guna2GroupBox1);
             Controls.Add(Image);
             Name = "Form5";
-            Text = "Form5";
-            Load += Form5_Load;  // <-- Ajoutez cette ligne pour l'événement Load
+            Text = "Inventaire ";
+            Load += Form5_Load;
             ((System.ComponentModel.ISupportInitialize)Image).EndInit();
             guna2GroupBox1.ResumeLayout(false);
             ResumeLayout(false);

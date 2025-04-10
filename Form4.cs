@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -70,6 +69,7 @@ namespace InventoryApp
 
         private void AddCard_Click(object sender, EventArgs e)
         {
+            CardControl.view = false;  // Revenir en mode ajout
             Form background = new Form(); try
             {
                 using (Form5 frm = new Form5())
@@ -134,5 +134,39 @@ namespace InventoryApp
                 CardControl.isDeleted = false;
             }
         }
+
+        private void txsearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        public static string searchKey;
+        private void txsearch_Key(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                searchKey = txsearch.Text;
+                flowLayoutPanel1.Controls.Clear();  // Efface tous les contrôles précédents
+
+                // Création de l'instance de ProductsRepository
+                ProductsRepository repo = new ProductsRepository();
+
+                // Recherche des produits correspondants à la clé de recherche
+                var searchResults = repo.SearchProducts(searchKey);
+
+                // Ajoute chaque résultat de recherche comme un nouveau CardControl dans le FlowLayoutPanel
+                foreach (var product in searchResults)
+                {
+                    CardControl card = new CardControl();  // Crée un nouveau CardControl
+
+                    // Utilise la méthode searchResult pour afficher les détails du produit dans le CardControl
+                    card.searchResult(product.nom);  // Affiche les détails du produit dans ce CardControl
+
+                    // Ajoute le CardControl dans le FlowLayoutPanel
+                    flowLayoutPanel1.Controls.Add(card);
+                }
+            }
+        }
+
+
     }
 }

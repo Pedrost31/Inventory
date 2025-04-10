@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 
 namespace InventoryApp.Repositories
 {
-    class ProductsRepository
+  public  class ProductsRepository
     {
         private readonly string connectionString = "Data Source=DESKTOP-NT0F4J8;Initial Catalog=InventoryAppDB;Integrated Security=True;TrustServerCertificate=True;";
 
@@ -221,6 +221,52 @@ namespace InventoryApp.Repositories
             return product;
         }
 
+        public List<Products> SearchProducts(string key)
+        {
+            var searchResults = new List<Products>();
+
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    // Utilisation de LIKE pour chercher les produits dont le nom commence par la clé
+                    string sql = "SELECT * FROM produits WHERE nom LIKE @searchKey";
+                    using (var command = new SqlCommand(sql, connection))
+                    {
+                        // On ajoute le paramètre en concaténant "%" à la clé de recherche
+                        command.Parameters.AddWithValue("@searchKey", key + "%");
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var product = new Products
+                                {
+                                    id = reader.GetInt32(0),
+                                    nom = reader.GetString(1),
+                                    description = reader.IsDBNull(2) ? "" : reader.GetString(2),
+                                    prix = Convert.ToDouble(reader.GetDecimal(3)),
+                                    stock = reader.GetInt32(4),
+                                    seuil_alerte = reader.GetInt32(5),
+                                    categorie = reader.IsDBNull(6) ? "" : reader.GetString(6),
+                                    fournisseur = reader.IsDBNull(7) ? "" : reader.GetString(7),
+                                    image_link = reader.IsDBNull(8) ? "" : reader.GetString(8)
+                                };
+
+                                searchResults.Add(product);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur lors de la recherche : " + ex.Message);
+            }
+
+            return searchResults;
+        }
 
         public void CreateProduct(Products product)
         {

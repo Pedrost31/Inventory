@@ -31,8 +31,9 @@
             components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             flowLayoutPanel1 = new FlowLayoutPanel();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            txsearch = new Guna.UI2.WinForms.Guna2TextBox();
             AddCard = new MaterialSkin.Controls.MaterialFloatingActionButton();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -47,30 +48,33 @@
             flowLayoutPanel1.TabIndex = 0;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
-            // guna2TextBox1
+            // txsearch
             // 
-            guna2TextBox1.BorderRadius = 15;
-            guna2TextBox1.CustomizableEdges = customizableEdges1;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(20, 82);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Search";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox1.Size = new Size(200, 36);
-            guna2TextBox1.TabIndex = 1;
+            txsearch.BorderRadius = 15;
+            txsearch.CustomizableEdges = customizableEdges1;
+            txsearch.DefaultText = "";
+            txsearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txsearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txsearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txsearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txsearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txsearch.Font = new Font("Segoe UI", 9F);
+            txsearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txsearch.Location = new Point(20, 82);
+            txsearch.Name = "txsearch";
+            txsearch.PlaceholderText = "Search";
+            txsearch.SelectedText = "";
+            txsearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txsearch.Size = new Size(200, 36);
+            txsearch.TabIndex = 1;
+            txsearch.TextChanged += txsearch_TextChanged;
+            txsearch.KeyPress += txsearch_Key;
             // 
             // AddCard
             // 
             AddCard.Depth = 0;
             AddCard.Icon = null;
+            AddCard.Image = (Image)resources.GetObject("AddCard.Image");
             AddCard.Location = new Point(1171, 692);
             AddCard.MouseState = MaterialSkin.MouseState.HOVER;
             AddCard.Name = "AddCard";
@@ -101,10 +105,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1272, 754);
             Controls.Add(AddCard);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(txsearch);
             Controls.Add(flowLayoutPanel1);
             Name = "Form4";
-            Text = "Form4";
+            Text = "Inventaire ";
             Load += Form4_Load;
             ResumeLayout(false);
         }
@@ -112,7 +116,7 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txsearch;
         private MaterialSkin.Controls.MaterialFloatingActionButton AddCard;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private System.Windows.Forms.Timer timer1;

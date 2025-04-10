@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InventoryApp.Repositories
 {
-    class UsersRepository
+   public class UsersRepository
     {
         private readonly string connectionString = "Data Source=DESKTOP-NT0F4J8;Initial Catalog=InventoryAppDB;Integrated Security=True;TrustServerCertificate=True;";
 

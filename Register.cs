@@ -1,5 +1,6 @@
 ﻿using InventoryApp.Models;
 using InventoryApp.Repositories;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,14 +11,21 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace InventoryApp
 {
     public partial class Register : Form
     {
+        MaterialSkinManager materialSkinManager;
         public Register()
         {
+
             InitializeComponent();
+
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey900, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Cyan700, TextShade.WHITE);
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

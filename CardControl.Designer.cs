@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardControl));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -56,12 +57,14 @@
             // 
             // PictureBox2
             // 
+            PictureBox2.Image = (Image)resources.GetObject("PictureBox2.Image");
             PictureBox2.ImageRotate = 0F;
             PictureBox2.Location = new Point(19, 34);
             PictureBox2.Name = "PictureBox2";
             PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges1;
             PictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             PictureBox2.Size = new Size(104, 106);
+            PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             PictureBox2.TabIndex = 0;
             PictureBox2.TabStop = false;
             PictureBox2.Click += guna2CirclePictureBox1_Click;
@@ -69,11 +72,13 @@
             // guna2PictureBox1
             // 
             guna2PictureBox1.CustomizableEdges = customizableEdges2;
+            guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(283, 13);
+            guna2PictureBox1.Location = new Point(317, 7);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            guna2PictureBox1.Size = new Size(84, 33);
+            guna2PictureBox1.Size = new Size(51, 50);
+            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 1;
             guna2PictureBox1.TabStop = false;
             guna2PictureBox1.Click += guna2PictureBox1_Click;
